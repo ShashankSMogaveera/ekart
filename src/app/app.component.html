@@ -1,6 +1,6 @@
 <app-header></app-header>
-<app-search-box></app-search-box>
-<app-products></app-products>
+<app-search-box (sendSearchText)="receiveSearchText($event)"></app-search-box>
+<app-products [searchText]="searchText"></app-products>
 <div>
     Counter
     <br>

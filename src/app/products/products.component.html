@@ -1,0 +1,16 @@
+
+<app-filter-product
+    [all]="all"
+    [inStock]="inStock"
+    [outOfStock]="outOfStock"
+    (childEmitter)="receiveSelectedFilter($event)"
+></app-filter-product>
+<div class="ekart--products--container">
+      <div *ngFor="let product of productList">
+        <!-- (selectedFilter === 'all' || product.is_in_inventory.toString() === selectedFilter) &&  -->
+        <app-product  
+            [prod]="product" 
+            *ngIf="(searchText === '' || product.name.includes(searchText))">
+        </app-product>      
+    </div>
+</div>

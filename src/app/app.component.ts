@@ -14,11 +14,17 @@ import { SearchComponent } from '../app/searchbox/search-box.component'
 export class AppComponent {
   title = 'ekart';
   count=0;
+  searchText:string='';
 
   incrementCount(){
     this.count++;
   }
   decrementCount(){
     this.count--;
+  }
+
+  receiveSearchText(value:string){
+    console.log(this.searchText)
+    this.searchText=value;
   }
 }

@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main section a{
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+}
+
+.main1 section{
+    background-color: rgb(242, 248, 246);
+        position: relative;
+        left: 30%;        
+}

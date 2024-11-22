@@ -1,0 +1,6 @@
+main{
+    height: 5vh;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}

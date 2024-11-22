@@ -1,0 +1,71 @@
+/* Reset styles for consistent behavior */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the search box */
+div.search-box-container {
+    position: relative;
+    margin: 0 auto; /* Center the container */
+    width: 50%; /* Fixed width */
+    height: 6vh; /* Adjusted height */
+    border: 1px solid #ccc; /* Neutral border color */
+    border-radius: 8px;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    padding: 0 1rem; /* Horizontal padding */
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Input field styling */
+.search-box {
+    border: none;
+    width: 100%; /* Full width inside the container */
+    height: 100%; /* Match container height */
+    font-size: 1rem;
+    padding: 4px; /* Reset padding */
+    outline: none; /* Remove default outline */
+    background: transparent;
+    color: #333;
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+/* Focus styling for input */
+.search-box:focus {
+    outline: none; /* Remove native outline */
+    box-shadow: inset 0 0 0 2px #000000; /* Inner focus effect */
+    border-radius:5px;
+}
+
+/* Search icon styling */
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem; /* Space between input and icon */
+    cursor: pointer;
+    height: 80%;
+    width: 13%;
+    color: #2e3945; /* Matches the focus color */
+    font-size: 1.5rem;
+    background-color: #000000;
+    border-radius:5px;
+}
+
+.search-icon-disabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem; /* Space between input and icon */
+    cursor: pointer;
+    height: 80%;
+    width: 13%;
+    color: #0682fe; /* Matches the focus color */
+    font-size: 1.5rem;
+    background-color: #617480;
+    border-radius:5px;
+    cursor: not-allowed;
+}
